@@ -9,7 +9,7 @@ fetch('https://rickandmortyapi.com/api/character')
   .then(function(data){
     // Any code that depends on the `data` must go in this block
     const chars = document.querySelector('.chars');
-    
+    // TODO : Fix random array, not working
     const randomId = function(){
       //randomId.length = [Math.floor(Math.random() * randomId.length)];
       min = Math.ceil(0);
