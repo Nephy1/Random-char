@@ -15,9 +15,9 @@ https://nephy1.github.io/CPNT-262-A3/
 https://rickandmortyapi.com/
 https://rickandmortyapi.com/documentation
 
-Matthew Lipsius - debugging
-David Ha - debugging / editing 
-Lucas Cummings - debugging / editing
+- Matthew Lipsius - debugging
+- David Ha - debugging / editing 
+- Lucas Cummings - debugging / editing
 
 
 Code references
