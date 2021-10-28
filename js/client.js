@@ -1,4 +1,9 @@
+"use strict";
+
+const chars = document.querySelector('.chars');
+const fetchData = function(){
 fetch('https://rickandmortyapi.com/api/character')
+
   .then(function(response){
     // JSON that is returned from the server must be converted to a JS object asynchronously.
     if (!response.ok) {
@@ -8,20 +13,17 @@ fetch('https://rickandmortyapi.com/api/character')
   })
   .then(function(data){
     // Any code that depends on the `data` must go in this block
-    const chars = document.querySelector('.chars');
-    const button = document.querySelector('button');
-
-    let id ;
+    
     // New Character Generator
-    const newChar = function (){
-      id = [Math.floor(Math.random() * `${data.results.length}`)];
-      return id;
+    function newChar(){
+      return Math.floor(Math.random() * `${data.results.length}`);
+      
     }
+    // IF YOU GET ANTENNA RICK IT'S NOT BROKEN IT'S JUST THE CHARACTER
+    
     // Invoking Function
-    newChar();
-    // Button doesnt work
-    button.addEventListener(`click`, newChar);
-
+    const id = newChar();
+    
     chars.innerHTML = `
     <figure>
     <h2>${data.results[id].name}</h2>
@@ -39,9 +41,7 @@ fetch('https://rickandmortyapi.com/api/character')
     </ul>
     </figcaption>
     </figure>
-    <button>New Character</button>
-    `;
-    
+    `;  
   })
   
   .catch(function(err){
@@ -49,5 +49,6 @@ fetch('https://rickandmortyapi.com/api/character')
     alert('Something went wrong! Please refresh your page or come back later!')
     console.log(err);
   });
-
+}
+ document.querySelector('button').addEventListener("click", fetchData);
   

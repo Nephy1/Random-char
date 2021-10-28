@@ -1,0 +1,25 @@
+
+html {
+  margin: 0;
+  background-color: black;
+  color:snow;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  font-size: 1.5rem;
+}
+
+button {
+width: 6em;
+height: 6em;
+border-radius: 50%;
+background-color: springgreen;
+cursor: pointer;
+font-family: cursive;
+}
+
+img {
+  border-radius: 10%;
+  box-shadow: 2px 2px 2px 2px whitesmoke;
+}
