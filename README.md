@@ -10,7 +10,7 @@ https://nephy1.github.io/CPNT-262-A3/
 ## Side Notes
 - The character "Antenna Rick" isn't bugged, that's just the default character image that was supplied.
 
-# Attributions
+## Attributions
 
 https://rickandmortyapi.com/
 https://rickandmortyapi.com/documentation
