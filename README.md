@@ -1,5 +1,5 @@
-https://github.com/Nephy1/CPNT-262-A3
-https://nephy1.github.io/CPNT-262-A3/
+https://github.com/Nephy1/Random-char
+https://nephy1.github.io/Random-char/
 ---
 
 # Issues
